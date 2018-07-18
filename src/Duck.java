@@ -9,10 +9,6 @@ public abstract class Duck extends Card {
 	public boolean hasActed;
 	/**Whether or not this duck has an active ability*/
 	public boolean hasAbility;
-	/**Method called when the duck is played
-	 * @return true if the ability worked, false if the card can't be PLAYED because of the ability not being triggerable
-	 */
-	public abstract boolean onPlayed();
 	/**Method called when the active ability button is clicked (and the duck HAS an active)
 	 * @return true if the ability worked, false if the ability can't be used due to lack of valid target
 	 */
