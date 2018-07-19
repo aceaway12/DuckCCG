@@ -1,3 +1,5 @@
+package duckccg.cards;
+
 public abstract class Duck extends Card {
 	/**Duck's attack modifier*/
 	public int atkMod;

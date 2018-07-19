@@ -1,3 +1,4 @@
+package duckccg.cards;
 
 public abstract class Card {
 	/**Location of card's sprite*/
