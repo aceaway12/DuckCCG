@@ -1,5 +1,10 @@
 package duckccg.cards;
 import java.util.Random;
+/*	This is a test duck, subject to change
+ *  review this duck and see what you think, any errors? any changes that need to be made? anything you specifically like? 
+ * 
+ * 
+ */
 public class DuckMillhouse extends Duck {
 	Random rng = new Random();
 	private String name = "Duckhouse Manaquack";;
