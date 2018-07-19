@@ -5,7 +5,7 @@ import java.util.Random;
  * 
  * 
  */
-public class DuckMillhouse extends Duck {
+public class DuckDuckhouse extends Duck {
 	Random rng = new Random();
 	private String name = "Duckhouse Manaquack";;
 	private int atkMod = 4;
@@ -26,11 +26,11 @@ public class DuckMillhouse extends Duck {
 	}
 	@Override
 	public int attack(int targetPos) {
-		return rng.nextInt(6)+1+atkMod;
+		return rng.nextInt(6)+1+atkMod+atkBon;
 	}
 	@Override
 	public int defend(int attackerPos) {
-		return rng.nextInt(6)+1+defMod;
+		return rng.nextInt(6)+1+defMod+defBon;
 	}
 	@Override
 	public void modStats(int atkVal, int defVal) {
