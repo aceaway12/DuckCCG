@@ -1,5 +1,9 @@
+package duckccg.menus;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+
+import duckccg.core.ProgramOperator;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
@@ -31,9 +35,8 @@ public class MainMenu extends JPanel {
 		buttonPanel.add(singlePlayer);
 		buttonPanel.add(multiPlayer);
 		singlePlayer.addActionListener(new ActionListener() {
-			@Override
 			public void actionPerformed(ActionEvent e) {
-				GameOperator.beginSoloDraft();
+				ProgramOperator.beginSoloDraft();
 			}
 		});
 	}
