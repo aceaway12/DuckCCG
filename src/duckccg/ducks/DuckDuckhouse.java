@@ -18,7 +18,7 @@ public class DuckDuckhouse extends Duck {
 	public String abilitytext = "Entrance:Opponent plays an free duck, which is clearly inferior";
 	//abilitytext is the ability explanation, whether it be an on play thing, or an available ability
 	//Entrance is placeholder name for battlecry
-	public String imgpath = "duckccg/resources/DuckMillhouse";
+	public String imgpath = "DuckPics/DuckMillhouse.jpg";
 	
 	@Override
 	public boolean activateAbility() {

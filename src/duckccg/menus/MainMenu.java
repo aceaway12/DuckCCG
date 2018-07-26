@@ -30,7 +30,7 @@ public class MainMenu extends JPanel {
 		buttonPanel.setLayout(new GridLayout(2,1));
 		this.add(topHalf);
 		this.add(buttonPanel);
-		topHalf.add(new JLabel(new ImageIcon(logo)));
+		topHalf.add(new JLabel(new ImageIcon(logo.getScaledInstance(100,100,Image.SCALE_SMOOTH))));
 		//bottomHalf.add(buttonPanel);
 		buttonPanel.add(singlePlayer);
 		buttonPanel.add(multiPlayer);
