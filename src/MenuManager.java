@@ -1,8 +1,5 @@
-package duckccg.core;
 import java.awt.*;
 import javax.swing.*;
-
-import duckccg.menus.MainMenu;
 
 public class MenuManager {
 	public static final int MAIN_MENU = 0;
