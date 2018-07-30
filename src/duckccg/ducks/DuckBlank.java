@@ -13,6 +13,7 @@ public class DuckBlank extends Duck {
 	public String flavortext = "InsertFlavorTextHere";
 	public String abilitytext = "InsertAbilityTextHere";
 	public String imgpath = "InsertImgPathHere";
+	protected int isLegend = 0;
 	
 	@Override
 	public boolean activateAbility() {

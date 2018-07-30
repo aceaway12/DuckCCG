@@ -19,6 +19,7 @@ public class DuckDuckhouse extends Duck {
 	//abilitytext is the ability explanation, whether it be an on play thing, or an available ability
 	//Entrance is placeholder name for battlecry
 	public String imgpath = "DuckPics/DuckMillhouse.jpg";
+	protected int isLegend = 1;
 	
 	@Override
 	public boolean activateAbility() {
