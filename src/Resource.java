@@ -1,3 +1,3 @@
-import duckccg.cards.Card;
+import duckccg.core.Card;
 
 public abstract class Resource extends Card {}

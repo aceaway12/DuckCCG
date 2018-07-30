@@ -17,7 +17,7 @@ public class CardDatabase {
 		case 1:
 			return new DuckDuckhouse();
 		default:
-			return new DuckDuckhouse();
+			return new DuckBlank();
 		}
 	}
 
