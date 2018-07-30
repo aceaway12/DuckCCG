@@ -1,5 +1,4 @@
-package duckccg.core;
-public class ProgramOperator {
+public class GameOperator {
 	public static void main(String[] args) {
 		MenuManager.initialize();
 	}
