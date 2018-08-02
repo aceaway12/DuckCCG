@@ -1,4 +1,4 @@
-package duckccg.menus;
+package duckccg.guicomponents;
 
 import java.awt.*;
 import javax.swing.*;
