@@ -1,18 +1,22 @@
+package duckccg.ducks;
+
+import duckccg.core.Card;
+
 public abstract class Duck extends Card {
 	/**Duck's attack modifier*/
-	public int atkMod;
+	protected int atkMod;
 	/**Duck's defense modifier*/
-	public int defMod;
+	protected int defMod;
 	/**Duck's board location, -1 if dead*/
 	public int pos;
 	/**Whether or not the duck has acted this turn*/
-	public boolean hasActed;
+	protected boolean hasActed;
 	/**Whether or not this duck has an active ability*/
 	public boolean hasAbility;
-	/**Method called when the duck is played
-	 * @return true if the ability worked, false if the card can't be PLAYED because of the ability not being triggerable
-	 */
-	public abstract boolean onPlayed();
+	protected int atkBon;
+	protected int defBon;
+	/**Whether or not this duck is legendary*/
+	protected int isLegend;
 	/**Method called when the active ability button is clicked (and the duck HAS an active)
 	 * @return true if the ability worked, false if the ability can't be used due to lack of valid target
 	 */
@@ -32,6 +36,14 @@ public abstract class Duck extends Card {
 	 * @param defVal value to be added to the defense modifier
 	 */
 	public abstract void modStats(int atkVal, int defVal);
+	/**Triggers end-of-turn events
+	 * @return true if the duck effect fired, false if it failed (due to lack of target/condition)
+	 */
+	public abstract boolean turnEnd();
+	/**Triggers start-of-turn events
+	 * @return true if the duck effect fired, false if it failed (due to lack of target/condition)
+	 */
+	public abstract boolean turnStart();
 	/**Triggers on-death events
 	 * @param attackerPos the board location of the killing duck
 	 * @return true if the duck died, false if the duck somehow didn't die
