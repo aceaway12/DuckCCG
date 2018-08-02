@@ -15,6 +15,8 @@ public abstract class Duck extends Card {
 	public boolean hasAbility;
 	protected int atkBon;
 	protected int defBon;
+	/**Whether or not this duck is legendary*/
+	protected int isLegend;
 	/**Method called when the active ability button is clicked (and the duck HAS an active)
 	 * @return true if the ability worked, false if the ability can't be used due to lack of valid target
 	 */

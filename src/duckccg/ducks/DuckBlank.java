@@ -1,25 +1,19 @@
 package duckccg.ducks;
 
 import duckccg.core.RNGEngine;
-/*	This is a test duck, subject to change
- *  review this duck and see what you think, any errors? any changes that need to be made? anything you specifically like? 
- * 
- * 
+/*	Insert any notes about a duck here
  */
-public class DuckDuckhouse extends Duck {
-	protected String name = "Duckhouse Manaquack";
-	protected int atkMod = 4;
-	protected int defMod = 4;
+public class DuckBlank extends Duck {
+	protected String name = "InsertNameHere";
+	protected int atkMod = 0;
+	protected int defMod = 0;
 	protected int atkBon = 0;
-	//atkBon and defBon are for if another duck buffs other ducks
 	protected int defBon = 0;
 	protected boolean hasAbility = false;
-	public String flavortext = "Prepare to face the MIGHTY DUCKHOUSE MANAQAUCK!";
-	public String abilitytext = "Entrance:Opponent plays an free duck, which is clearly inferior";
-	//abilitytext is the ability explanation, whether it be an on play thing, or an available ability
-	//Entrance is placeholder name for battlecry
-	public String imgpath = "DuckPics/DuckMillhouse.jpg";
-	protected int isLegend = 1;
+	public String flavortext = "InsertFlavorTextHere";
+	public String abilitytext = "InsertAbilityTextHere";
+	public String imgpath = "InsertImgPathHere";
+	protected int isLegend = 0;
 	
 	@Override
 	public boolean activateAbility() {
@@ -44,7 +38,6 @@ public class DuckDuckhouse extends Duck {
 	}
 	@Override
 	public boolean onPlayed() {
-		//forces opponent to play a duck from their hand
 		return true;
 	}
 	public int getatkMod()

@@ -12,6 +12,7 @@ public class DuckGeneralQuack extends Duck {
 	public String flavortext = "Need a hand?";
 	public String abilitytext = "At the end of your turn, give adjacent minions a bonus attack and defense modifier";
 	public String imgpath = "";
+	protected int isLegend = 1;
 	
 	@Override
 	public boolean activateAbility() {
